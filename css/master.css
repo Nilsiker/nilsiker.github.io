@@ -8,9 +8,11 @@ body {
 }
 
 @media (pointer:coarse) {
-  body{
-    margin: 0px 0px 0px 0px;
-    max-width: 100px;
+  body {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 0px 20px 0px 20px;
+    margin-top: 40px;
   }
 }
 
@@ -39,7 +41,6 @@ a {
   background-color: #FF33FF;
   -webkit-filter: invert(1);
   filter: invert(1);
-
 }
 
 .item {
@@ -76,12 +77,11 @@ a {
   background-color: white;
 }
 
-.result{
+.result {
   text-align: center;
   word-spacing: 30px;
   line-height: 60px;
 }
-
 
 input[type=checkbox] {
   margin-right: -20;
@@ -98,7 +98,7 @@ input {
   vertical-align: middle;
 }
 
-select{
+select {
   width: 65px;
   height: 30px;
   font-size: 20px;
@@ -119,7 +119,7 @@ button {
   align-self: center;
 }
 
-img{
+img {
   height: 40px;
 }
 

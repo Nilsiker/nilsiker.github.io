@@ -8,17 +8,36 @@ body {
 }
 
 @media (pointer: coarse) {
-  .profile {
-    margin-top: 20px;
-  }
-
   .wrapper {
     background-color: #282828;
     border-radius: 8px;
     max-width: 100%;
     max-height: 100%;
-    margin: auto;
+    margin-top: 10px;
     padding: 15px 15px 15px 15px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: columns;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .menu {
+    order: 0;
+    flex: 1;
+    margin: auto;
+    margin-right: 40px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+  }
+
+  .profile {
+    order: 1;
+    margin-top: 20px;
   }
 
   .container {
@@ -27,16 +46,8 @@ body {
     flex-direction: row;
   }
 
-  .header {
-    display: none;
-    border-radius: 8px;
-    text-align: center;
-    background-color: gray;
-    color: white;
-    text-shadow: 0px 0px 20px black;
-  }
-
   .window {
+    margin-right: 20px;
     padding: inherit;
     border-radius: 8px;
     background-color: gray;
@@ -46,7 +57,6 @@ body {
   }
 
   .mainwindow {
-    margin-left: 20px;
     padding: 40px 10px 40px 40px;
     border-radius: inherit;
     order: 1;
@@ -141,7 +151,7 @@ body {
     flex-direction: row;
   }
 
-  .header {
+  .menu {
     font-family: monospace;
     font-weight: 500;
     border-radius: 8px;

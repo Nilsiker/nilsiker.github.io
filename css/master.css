@@ -1,0 +1,38 @@
+body {
+  background-color: #282828;
+  margin: 10;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.header {
+  text-align: center;
+  background-color: lightgray;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+}
+
+.navigation {
+  order: 0;
+  background-color: lightgray;
+  border-color: white;
+  border-radius: 5;
+  border-width: medium;
+  width: 100;
+  padding: 15;
+  margin-right: 10;
+}
+
+.mainwindow {
+
+  order: 1;
+    flex: 1;
+
+  background-color: white;
+  padding: 15;
+}

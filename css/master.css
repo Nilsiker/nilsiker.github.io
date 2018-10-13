@@ -1,6 +1,4 @@
 body {
-  border-collapse: separate;
-  display: block;
   background-color: #282828;
   border-radius: 8px;
   margin: auto;
@@ -22,13 +20,18 @@ a {
   text-decoration: none;
 }
 
-b {
-  font-size: 120%;
+.base {
+  background-color: yellow;
 }
 
-h2{
-  vertical-align: middle;
+.skill {
+  background-color: green;
 }
+
+.item {
+  background-color: black;
+}
+
 .header {
   flex: inherit;
   border-radius: 8px;
@@ -58,7 +61,7 @@ h2{
 }
 
 input[type=number]::-webkit-inner-spin-button {
-    opacity: 1
+  opacity: 1
 }
 
 input[type=checkbox] {
@@ -67,7 +70,7 @@ input[type=checkbox] {
   height: 15px;
 }
 
-input{
+input {
   width: 45px;
   height: 30px;
   font-size: 20px;
@@ -76,16 +79,15 @@ input{
   vertical-align: middle;
 }
 
-button{
+button {
   border-radius: 8px;
   font-weight: bold;
   width: 110px;
   height: 30px;
 }
-
 }
 
-.center{
+.center {
   align-self: center;
 }
 

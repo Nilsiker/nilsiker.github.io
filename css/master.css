@@ -1,6 +1,11 @@
 body {
+  display: block;
   background-color: #282828;
   border-radius: 8px;
+  margin: auto;
+  margin-top: 40px;
+  max-width: 960px;
+
 }
 
 a {
@@ -24,10 +29,11 @@ a:visited {
 }
 
 .header {
+  flex: inherit;
   margin: 5px 5px 0px 5px;
-  border-radius: inherit;
+  border-radius: 8px;
   text-align: center;
-  background-color: lightgray;
+  background-color: gray;
   color: white;
   text-shadow: 0px 0px 20px black;
 }
@@ -38,7 +44,7 @@ a:visited {
   padding: 0px 15px 15px 15px;
   border-radius: inherit;
   order: 0;
-  background-color: lightgray;
+  background-color: gray;
   width: 100px;
 }
 
@@ -49,4 +55,12 @@ a:visited {
   order: 1;
   flex: 1;
   background-color: white;
+}
+
+.github {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  box-shadow: 0px 0px 40px black;
 }

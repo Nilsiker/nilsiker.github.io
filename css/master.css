@@ -1,10 +1,12 @@
-body{
+body {
   background-color: #282828;
 }
+
 @media (pointer: coarse) {
-.profile{
-  margin-top: 20px;
-}
+  .profile {
+    margin-top: 20px;
+  }
+
   .wrapper {
     background-color: #282828;
     border-radius: 8px;
@@ -21,7 +23,7 @@ body{
   }
 
   .header {
-    display:none;
+    display: none;
     border-radius: 8px;
     text-align: center;
     background-color: gray;
@@ -111,7 +113,15 @@ body{
     filter: invert(1);
   }
 }
-@media (pointer: fine){
+
+@media (pointer: fine) {
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
   .wrapper {
     background-color: #282828;
     border-radius: 8px;
@@ -145,11 +155,12 @@ body{
 
   .mainwindow {
     margin-left: 20px;
-    padding: 40px 10px 40px 40px;
+    padding: 40px 32px 40px 40px;
     border-radius: inherit;
     order: 1;
     flex: 1;
     background-color: white;
+    text-align: justify;
   }
 
   .result {

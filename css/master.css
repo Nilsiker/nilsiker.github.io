@@ -1,9 +1,22 @@
 body {
   background-color: #282828;
-  margin: 10;
+  border-radius: 8px;
+  padding-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover{
+
+}
+a:visited{
+  color: purple;
 }
 
 .container {
+  padding: 5px;
+  border-radius: inherit;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,6 +24,7 @@ body {
 }
 
 .header {
+  border-radius: inherit;
   text-align: center;
   background-color: lightgray;
   color: white;
@@ -18,21 +32,21 @@ body {
 }
 
 .navigation {
+  margin: 5px;
+  padding: 15;
+  padding-top: inherit;
+  border-radius: inherit;
   order: 0;
   background-color: lightgray;
-  border-color: white;
-  border-radius: 5;
-  border-width: medium;
-  width: 100;
-  padding: 15;
-  margin-right: 10;
+  width: 100px;
 }
 
 .mainwindow {
-
-  order: 1;
-    flex: 1;
-
-  background-color: white;
+  margin: 5px;
   padding: 15;
+  padding-top: inherit;
+  border-radius: inherit;
+  order: 1;
+  flex: 1;
+  background-color: white;
 }

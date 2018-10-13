@@ -83,7 +83,13 @@
       <br>
       <button type="button" onclick="roll('13')" style="background: green; color: white">Special</button>
       <input type="" id="013" onfocus="this.value=''" value="1">
-      <input type="" id="113" onfocus="this.value=''" value="2" style="color: black; background: yellow;">
+      <!-- <input type="" id="113" onfocus="this.value=''" value="2" style="color: black; background: yellow;"> -->
+      <select id="Spec">
+        <option value="STY">STY</option>
+        <option value="KYL">KYL</option>
+        <option value="SKP">SKP</option>
+        <option value="KNS">KNS</option>
+      </select>
       <br>
       <br>
       <button type="button" name="Bonus" style="background: green; color: white">Bonus</button>
@@ -96,7 +102,7 @@
     </div>
 
     <div class="mainwindow">
-      <p id="result">Här visas din rullning!</p>
+      <p id="result" class="result"></p>
     </div>
 
   </div>
@@ -120,8 +126,12 @@
 
 <script type="text/javascript">
   function roll(x) {
+
+    document.getElementById('result').innerHTML = null;
+
     var bDie = 0;
     var sDie = 0;
+    var rand = 0;
 
     switch (x) {
       case 'STY':
@@ -185,13 +195,45 @@
         sDie = document.getElementById('12').value;
         break;
       case '13':
-        bDie = document.getElementById('113').value;
         sDie = document.getElementById('013').value;
+        switch (document.getElementById('Spec').value) {
+          case 'STY':
+            bDie = document.getElementById('vSTY').value - document.getElementById('tSTY').value;
+            break;
+          case 'KYL':
+            bDie = document.getElementById('vKYL').value - document.getElementById('tKYL').value;
+            break;
+          case 'SKP':
+            bDie = document.getElementById('vSKP').value - document.getElementById('tSKP').value;;
+            break;
+          case 'KNS':
+            bDie = document.getElementById('vKNS').value - document.getElementById('tKNS').value;
+            break;
+          default:
+            break;
+        }
         break;
     }
 
+    while (bDie-- && bDie < 30) {
+      rand = Math.floor(Math.random() * 6) + 1;
+      if (rand == 1) {
+        document.getElementById('result').innerHTML += "<img src=\"imgs/biohazard.png\" alt=\"\" class=\"base\"> ";
+      } else {
+        document.getElementById('result').innerHTML += "<img src=\"imgs/" + rand + ".png\" alt=\"\" class=\"base\"> ";
+      }
+    }
 
-    document.getElementById('result').innerHTML = bDie + sDie;
+    document.getElementById('result').innerHTML += "<br>";
+
+    while (sDie-- && sDie < 30) {
+      rand = Math.floor(Math.random() * 6) + 1;
+      document.getElementById('result').innerHTML += "<img src=\"imgs/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
+    }
+
+  }
+
+  function betterRandom() {
 
   }
 </script>

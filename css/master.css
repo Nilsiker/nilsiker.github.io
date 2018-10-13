@@ -18,15 +18,10 @@ body {
 
 a {
   text-decoration: none;
-  cursor: pointer;
 }
 
-a:hover {
-  color: blue;
-}
-
-a:visited {
-  color: purple;
+b {
+  font-size: 120%;
 }
 
 .header {
@@ -35,40 +30,32 @@ a:visited {
   text-align: center;
   background-color: gray;
   color: white;
-  word-spacing: 90px;
   text-shadow: 0px 0px 20px black;
 }
 
-a.header {
-  color: white;
-  text-decoration: none;
-}
-
-a.header:hover {
-  color: white;
-}
-
-a.header:visited {
-  color: white;
-}
-
-.navigation {
-  font-family: sans-serif;
-  margin-right: 10px;
-  padding: 0px 15px 15px 15px;
+.window {
+  padding: 15px 15px 15px 15px;
   border-radius: inherit;
-  order: 0;
   background-color: gray;
-  width: 100px;
+  margin-left: 5px;
+  order: 0;
 }
 
 .mainwindow {
-  /* margin-left: 10px; */
+  margin-left: 20px;
+  margin-right: 10px;
   padding: 15px 15px 15px 15px;
   border-radius: inherit;
   order: 1;
   flex: 1;
   background-color: white;
+}
+
+input{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  justify-content: center;
 }
 
 .github {

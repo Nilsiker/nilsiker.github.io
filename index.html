@@ -8,115 +8,128 @@
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="profile">
+      <a href="https://github.com/Nilsiker/"> <img src="media\nilsiker.png" alt="" title="Check out my GitHub profile!" height="200" style="
+        height: 200px;
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 40px black;
+        ">
+      </a>
+    </div>
 
-  <a href="https://github.com/Nilsiker/"> <img src="imgs\nilsiker.png" alt="" title="Check out my GitHub profile!" height="200" class="github"> </a>
+
+    <div class="header">
+      <h1>
+        <a href="index.html" class="header"> YZ: Dice Roller </a>
+      </h1>
+    </div>
 
 
-  <div class="header">
-    <h1>
-      <a href="index.html" class="header"> YZ: Dice Roller </a>
-    </h1>
-  </div>
+    <div class="container">
 
 
 
-  <div class="container">
+      <div class="window">
+        <button type="button" onclick="roll('STY','0')" style="background: yellow">STY</button>
+        <input type="" id="vSTY" onfocus="this.value=''" value="2">
+        <input type="" id="tSTY" onfocus="this.value=''" value="0" style="color: red">
+        <br>
 
-    <div class="window">
-      <button type="button" onclick="roll('STY','0')" style="background: yellow">STY</button>
-      <input type="" id="vSTY" onfocus="this.value=''" value="2">
-      <input type="" id="tSTY" onfocus="this.value=''" value="0" style="color: red">
-      <br>
+        <button type="button" onclick="roll('KYL','0')" style="background: yellow">KYL</button>
+        <input type="" id="vKYL" onfocus="this.value=''" value="2">
+        <input type="" id="tKYL" onfocus="this.value=''" value="0" style="color: red">
+        <br>
 
-      <button type="button" onclick="roll('KYL','0')" style="background: yellow">KYL</button>
-      <input type="" id="vKYL" onfocus="this.value=''" value="2">
-      <input type="" id="tKYL" onfocus="this.value=''" value="0" style="color: red">
-      <br>
+        <button type="button" onclick="roll('SKP','0')" style="background: yellow">SKP</button>
+        <input type="" id="vSKP" onfocus="this.value=''" value="2">
+        <input type="" id="tSKP" onfocus="this.value=''" value="0" style="color: red">
+        <br>
 
-      <button type="button" onclick="roll('SKP','0')" style="background: yellow">SKP</button>
-      <input type="" id="vSKP" onfocus="this.value=''" value="2">
-      <input type="" id="tSKP" onfocus="this.value=''" value="0" style="color: red">
-      <br>
+        <button type="button" onclick="roll('KNS','0')" style="background: yellow">KNS</button>
+        <input type="" id="vKNS" onfocus="this.value=''" value="2">
+        <input type="" id="tKNS" onfocus="this.value=''" value="0" style="color: red">
 
-      <button type="button" onclick="roll('KNS','0')" style="background: yellow">KNS</button>
-      <input type="" id="vKNS" onfocus="this.value=''" value="2">
-      <input type="" id="tKNS" onfocus="this.value=''" value="0" style="color: red">
+        <br>
+        <br>
 
-      <br>
-      <br>
+        <button type="button" onclick="roll('1')" style="background: green; color: white">Kämpa på</button>
+        <input type="" id="1" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('2')" style="background: green; color: white">Ta krafttag</button>
+        <input type="" id="2" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('3')" style="background: green; color: white">Slåss</button>
+        <input type="" id="3" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('4')" style="background: green; color: white">Smyga</button>
+        <input type="" id="4" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('5')" style="background: green; color: white">Fly</button>
+        <input type="" id="5" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('6')" style="background: green; color: white">Skjuta</button>
+        <input type="" id="6" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('7')" style="background: green; color: white">Speja</button>
+        <input type="" id="7" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('8')" style="background: green; color: white">Förstå sig på</button>
+        <input type="" id="8" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('9')" style="background: green; color: white">Känna Zonen</button>
+        <input type="" id="9" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('10')" style="background: green; color: white">Genomskåda</button>
+        <input type="" id="10" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('11')" style="background: green; color: white">Manipulera</button>
+        <input type="" id="11" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('12')" style="background: green; color: white">Vårda</button>
+        <input type="" id="12" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" onclick="roll('13')" style="background: green; color: white">Special</button>
+        <input type="" id="013" onfocus="this.value=''" value="1">
+        <!-- <input type="" id="113" onfocus="this.value=''" value="2" style="color: black; background: yellow;"> -->
+        <select id="Spec">
+          <option value="STY">STY</option>
+          <option value="KYL">KYL</option>
+          <option value="SKP">SKP</option>
+          <option value="KNS">KNS</option>
+        </select>
+        <br>
+        <br>
+        <button type="button" name="Bonus" style="background: green; color: white">Bonus</button>
+        <input type="" id="Bonus" onfocus="this.value=''" value="0">
+        <br>
+        <button type="button" name="Pryl" style="background: black; color: white">Pryl</button>
+        <input type="" id="Pryl" onfocus="this.value=''" value="0">
+        <br>
 
-      <button type="button" onclick="roll('1')" style="background: green; color: white">Kämpa på</button>
-      <input type="" id="1" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('2')" style="background: green; color: white">Ta krafttag</button>
-      <input type="" id="2" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('3')" style="background: green; color: white">Slåss</button>
-      <input type="" id="3" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('4')" style="background: green; color: white">Smyga</button>
-      <input type="" id="4" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('5')" style="background: green; color: white">Fly</button>
-      <input type="" id="5" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('6')" style="background: green; color: white">Skjuta</button>
-      <input type="" id="6" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('7')" style="background: green; color: white">Speja</button>
-      <input type="" id="7" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('8')" style="background: green; color: white">Förstå sig på</button>
-      <input type="" id="8" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('9')" style="background: green; color: white">Känna Zonen</button>
-      <input type="" id="9" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('10')" style="background: green; color: white">Genomskåda</button>
-      <input type="" id="10" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('11')" style="background: green; color: white">Manipulera</button>
-      <input type="" id="11" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('12')" style="background: green; color: white">Vårda</button>
-      <input type="" id="12" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" onclick="roll('13')" style="background: green; color: white">Special</button>
-      <input type="" id="013" onfocus="this.value=''" value="1">
-      <!-- <input type="" id="113" onfocus="this.value=''" value="2" style="color: black; background: yellow;"> -->
-      <select id="Spec">
-        <option value="STY">STY</option>
-        <option value="KYL">KYL</option>
-        <option value="SKP">SKP</option>
-        <option value="KNS">KNS</option>
-      </select>
-      <br>
-      <br>
-      <button type="button" name="Bonus" style="background: green; color: white">Bonus</button>
-      <input type="" id="Bonus" onfocus="this.value=''" value="0">
-      <br>
-      <button type="button" name="Pryl" style="background: black; color: white">Pryl</button>
-      <input type="" id="Pryl" onfocus="this.value=''" value="0">
-      <br>
+      </div>
+
+      <div class="mainwindow">
+        <p id="result" class="result"></p>
+      </div>
 
     </div>
 
-    <div class="mainwindow">
-      <p id="result" class="result"></p>
-    </div>
 
+
+
+    <p style="color: gray; text-align: right"> All icons are taken from
+      <a href="https://game-icons.net" style="color: white"> game-icons.net </a>
+      under the
+      <a href="https://creativecommons.org/licenses/by/3.0/" style="color:white">CC BY 3.0</a>
+      license
+    </p>
   </div>
-
-
-
-
-  <p style="color: gray; text-align: right"> All icons are taken from
-    <a href="https://game-icons.net" style="color: white"> game-icons.net </a>
-    under the
-    <a href="https://creativecommons.org/licenses/by/3.0/" style="color:white">CC BY 3.0</a>
-    license
-  </p>
-
 </body>
 
 </html>
@@ -129,9 +142,12 @@
 
     document.getElementById('result').innerHTML = null;
 
+    var audio = new Audio('media/effect.mp3');
     var bDie = 0;
     var sDie = 0;
     var rand = 0;
+
+
 
     switch (x) {
       case 'STY':
@@ -218,9 +234,9 @@
     while (bDie-- && bDie < 30) {
       rand = Math.floor(Math.random() * 6) + 1;
       if (rand == 1) {
-        document.getElementById('result').innerHTML += "<img src=\"imgs/biohazard.png\" alt=\"\" class=\"base\"> ";
+        document.getElementById('result').innerHTML += "<img src=\"media/biohazard.png\" alt=\"\" class=\"base\"> ";
       } else {
-        document.getElementById('result').innerHTML += "<img src=\"imgs/" + rand + ".png\" alt=\"\" class=\"base\"> ";
+        document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"base\"> ";
       }
     }
 
@@ -228,9 +244,10 @@
 
     while (sDie-- && sDie < 30) {
       rand = Math.floor(Math.random() * 6) + 1;
-      document.getElementById('result').innerHTML += "<img src=\"imgs/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
     }
-
+    audio.play();
+    document.getElementById('result').innerHTML += "<br>";
   }
 
   function betterRandom() {

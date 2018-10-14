@@ -34,7 +34,7 @@ img:active {
   }
 
   .wrapper {
-    background-color: #282828;
+    /* background-color: #282828; */
     border-radius: 8px;
     width: 600px;
     margin: 0 auto;
@@ -93,7 +93,7 @@ img:active {
 
 @media (pointer: coarse) {
   .wrapper {
-    background-color: #282828;
+    /* background-color: #282828; */
     border-radius: 8px;
     max-width: 100%;
     max-height: 100%;

@@ -56,6 +56,7 @@ img:active {
     flex: 1;
     background-color: white;
     text-align: justify;
+    box-shadow: 0px 0px 80px black;
   }
 
   input {
@@ -129,6 +130,7 @@ img:active {
     flex: 1;
     background-color: white;
     text-align: justify;
+    box-shadow: 0px 0px 10px black;
   }
 
   input {
@@ -177,6 +179,7 @@ img:active {
   order: 0;
   line-height: 40px;
   padding: 10px 5px 10px 10px;
+  box-shadow: 0px 0px 80px black;
 }
 
 .result {

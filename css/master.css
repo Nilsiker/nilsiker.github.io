@@ -161,18 +161,6 @@ img:active {
   img {
     height: 80px;
   }
-
-  .cont {
-    position: relative;
-    float: right;
-    height: 320px;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    left: 10px;
-  }
 }
 
 .container {

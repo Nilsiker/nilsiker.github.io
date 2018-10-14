@@ -10,20 +10,19 @@ body {
 a {
   text-decoration: none;
 }
+
 a:active {
   filter: blur(1px);
 }
 
-img:active{
+img:active {
   filter: opacity(70%);
 }
 
-.project{
+.project {
   font-family: monospace;
   color: black;
-
 }
-
 
 @media (pointer: fine) {
 
@@ -103,7 +102,6 @@ img:active{
 
   .header {
     display: flex;
-    flex-direction: columns;
     padding: 10px 10px 10px 10px;
   }
 
@@ -162,6 +160,18 @@ img:active{
 
   img {
     height: 80px;
+  }
+
+  .cont {
+    position: relative;
+    float: right;
+    height: 320px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    left: 10px;
   }
 }
 

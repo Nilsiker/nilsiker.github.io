@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Nilsiker Homepage</title>
+  <title>Year Zero: Dice Roller</title>
   <link rel="stylesheet" href="css/master.css">
+  <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
       <div class="menu">
         <h1>
           <a href="index.html" class="menu"> Home </a>/
-          <a href="dice.html" class="menu"> Projects </a>/
+          <a href="projects.html" class="menu" style="color: goldenrod;"> Projects </a>/
           <a href="about.html" class="menu"> About </a>/
           <a href="contact.html" class="menu"> Contact </a>
         </h1>
@@ -42,72 +43,72 @@
 
 
       <div class="window">
-        <button type="button" onclick="roll('STY','0')" style="background: yellow">STY</button>
-        <input type="number" id="vSTY" onfocus="this.value=''" value="2">
-        <input type="number" id="tSTY" onfocus="this.value=''" style="color: red">
+        <button type="button" onclick="roll('STR','0')" style="background: yellow">STR</button>
+        <input type="number" id="vSTR" onfocus="this.value=''" value="2">
+        <input type="number" id="tSTR" onfocus="this.value=''" style="color: red">
         <br>
 
-        <button type="button" onclick="roll('KYL','0')" style="background: yellow">KYL</button>
-        <input type="number" id="vKYL" onfocus="this.value=''" value="2">
-        <input type="number" id="tKYL" onfocus="this.value=''" style="color: red">
+        <button type="button" onclick="roll('AGI','0')" style="background: yellow">AGI</button>
+        <input type="number" id="vAGI" onfocus="this.value=''" value="2">
+        <input type="number" id="tAGI" onfocus="this.value=''" style="color: red">
         <br>
 
-        <button type="button" onclick="roll('SKP','0')" style="background: yellow">SKP</button>
-        <input type="number" id="vSKP" onfocus="this.value=''" value="2">
-        <input type="number" id="tSKP" onfocus="this.value=''" style="color: red">
+        <button type="button" onclick="roll('WIT','0')" style="background: yellow">WIT</button>
+        <input type="number" id="vWIT" onfocus="this.value=''" value="2">
+        <input type="number" id="tWIT" onfocus="this.value=''" style="color: red">
         <br>
 
-        <button type="button" onclick="roll('KNS','0')" style="background: yellow">KNS</button>
-        <input type="number" id="vKNS" onfocus="this.value=''" value="2">
-        <input type="number" id="tKNS" onfocus="this.value=''" style="color: red">
+        <button type="button" onclick="roll('EMP','0')" style="background: yellow">EMP</button>
+        <input type="number" id="vEMP" onfocus="this.value=''" value="2">
+        <input type="number" id="tEMP" onfocus="this.value=''" style="color: red">
 
         <br>
         <br>
 
-        <button type="button" onclick="roll('1')" style="background: green; color: white">Kämpa på</button>
+        <button type="button" onclick="roll('1')" style="background: green; color: white">Endure</button>
         <input type="number" id="1" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('2')" style="background: green; color: white">Ta krafttag</button>
+        <button type="button" onclick="roll('2')" style="background: green; color: white">Force</button>
         <input type="number" id="2" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('3')" style="background: green; color: white">Slåss</button>
+        <button type="button" onclick="roll('3')" style="background: green; color: white">Fight</button>
         <input type="number" id="3" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('4')" style="background: green; color: white">Smyga</button>
+        <button type="button" onclick="roll('4')" style="background: green; color: white">Sneak</button>
         <input type="number" id="4" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('5')" style="background: green; color: white">Fly</button>
+        <button type="button" onclick="roll('5')" style="background: green; color: white">Move</button>
         <input type="number" id="5" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('6')" style="background: green; color: white">Skjuta</button>
+        <button type="button" onclick="roll('6')" style="background: green; color: white">Shoot</button>
         <input type="number" id="6" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('7')" style="background: green; color: white">Speja</button>
+        <button type="button" onclick="roll('7')" style="background: green; color: white">Scout</button>
         <input type="number" id="7" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('8')" style="background: green; color: white">Förstå sig på</button>
+        <button type="button" onclick="roll('8')" style="background: green; color: white">Comprehend</button>
         <input type="number" id="8" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('9')" style="background: green; color: white">Känna Zonen</button>
+        <button type="button" onclick="roll('9')" style="background: green; color: white">Know</button>
         <input type="number" id="9" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('10')" style="background: green; color: white">Genomskåda</button>
+        <button type="button" onclick="roll('10')" style="background: green; color: white">Sense</button>
         <input type="number" id="10" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('11')" style="background: green; color: white">Manipulera</button>
+        <button type="button" onclick="roll('11')" style="background: green; color: white">Manipulate</button>
         <input type="number" id="11" onfocus="this.value=''">
         <br>
-        <button type="button" onclick="roll('12')" style="background: green; color: white">Vårda</button>
+        <button type="button" onclick="roll('12')" style="background: green; color: white">Heal</button>
         <input type="number" id="12" onfocus="this.value=''">
         <br>
         <button type="button" onclick="roll('13')" style="background: green; color: white">Special</button>
         <input type="number" id="013" onfocus="this.value=''" value="1">
         <!-- <input type="number" id="113" onfocus="this.value=''" value="2" style="color: black; background: yellow;"> -->
         <select id="Spec">
-          <option value="STY">STY</option>
-          <option value="KYL">KYL</option>
-          <option value="SKP">SKP</option>
-          <option value="KNS">KNS</option>
+          <option value="STR">STR</option>
+          <option value="AGI">AGI</option>
+          <option value="WIT">WIT</option>
+          <option value="EMP">EMP</option>
         </select>
         <br>
         <br>
@@ -139,124 +140,3 @@
 </body>
 
 </html>
-
-
-
-
-<script type="text/javascript">
-  function roll(x) {
-
-    document.getElementById('result').innerHTML = null;
-
-    var audio = new Audio('media/effect.mp3');
-    var bDie = 0;
-    var sDie = 0;
-    var rand = 0;
-
-
-
-    switch (x) {
-      case 'STY':
-        bDie = document.getElementById('vSTY').value - document.getElementById('tSTY').value;
-        break;
-      case 'KYL':
-        bDie = document.getElementById('vKYL').value - document.getElementById('tKYL').value;
-        break;
-      case 'SKP':
-        bDie = document.getElementById('vSKP').value - document.getElementById('tSKP').value;;
-        break;
-      case 'KNS':
-        bDie = document.getElementById('vKNS').value - document.getElementById('tKNS').value;
-        break;
-      case '1':
-        bDie = document.getElementById('vSTY').value - document.getElementById('tSTY').value;
-        sDie = document.getElementById('1').value;
-        break;
-      case '2':
-        bDie = document.getElementById('vSTY').value - document.getElementById('tSTY').value;
-        sDie = document.getElementById('2').value;
-        break;
-      case '3':
-        bDie = document.getElementById('vSTY').value - document.getElementById('tSTY').value;
-        sDie = document.getElementById('3').value;
-        break;
-      case '4':
-        bDie = document.getElementById('vKYL').value - document.getElementById('tKYL').value;
-        sDie = document.getElementById('4').value;
-        break;
-      case '5':
-        bDie = document.getElementById('vKYL').value - document.getElementById('tKYL').value;
-        sDie = document.getElementById('5').value;
-        break;
-      case '6':
-        bDie = document.getElementById('vKYL').value - document.getElementById('tKYL').value;
-        sDie = document.getElementById('6').value;
-        break;
-      case '7':
-        bDie = document.getElementById('vSKP').value - document.getElementById('tSKP').value;
-        sDie = document.getElementById('7').value;
-        break;
-      case '8':
-        bDie = document.getElementById('vSKP').value - document.getElementById('tSKP').value;
-        sDie = document.getElementById('8').value;
-        break;
-      case '9':
-        bDie = document.getElementById('vSKP').value - document.getElementById('tSKP').value;
-        sDie = document.getElementById('9').value;
-        break;
-      case '10':
-        bDie = document.getElementById('vKNS').value - document.getElementById('tKNS').value;
-        sDie = document.getElementById('10').value;
-        break;
-      case '11':
-        bDie = document.getElementById('vKNS').value - document.getElementById('tKNS').value;
-        sDie = document.getElementById('11').value;
-        break;
-      case '12':
-        bDie = document.getElementById('vKNS').value - document.getElementById('tKNS').value;
-        sDie = document.getElementById('12').value;
-        break;
-      case '13':
-        sDie = document.getElementById('013').value;
-        switch (document.getElementById('Spec').value) {
-          case 'STY':
-            bDie = document.getElementById('vSTY').value - document.getElementById('tSTY').value;
-            break;
-          case 'KYL':
-            bDie = document.getElementById('vKYL').value - document.getElementById('tKYL').value;
-            break;
-          case 'SKP':
-            bDie = document.getElementById('vSKP').value - document.getElementById('tSKP').value;;
-            break;
-          case 'KNS':
-            bDie = document.getElementById('vKNS').value - document.getElementById('tKNS').value;
-            break;
-          default:
-            break;
-        }
-        break;
-    }
-
-    while (bDie-- && bDie < 30) {
-      rand = Math.floor(Math.random() * 6) + 1;
-      if (rand == 1) {
-        document.getElementById('result').innerHTML += "<img src=\"media/biohazard.png\" alt=\"\" class=\"base\"> ";
-      } else {
-        document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"base\"> ";
-      }
-    }
-
-    document.getElementById('result').innerHTML += "<br>";
-
-    while (sDie-- && sDie < 30) {
-      rand = Math.floor(Math.random() * 6) + 1;
-      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
-    }
-    audio.play();
-    document.getElementById('result').innerHTML += "<br>";
-  }
-
-  function betterRandom() {
-
-  }
-</script>

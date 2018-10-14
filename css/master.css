@@ -7,6 +7,90 @@ body {
   background-color: #282828;
 }
 
+a {
+  text-decoration: none;
+}
+a:active {
+  filter: blur(1px);
+}
+
+img:active{
+  filter: opacity(70%);
+}
+
+.project{
+  font-family: monospace;
+  color: black;
+
+}
+
+
+@media (pointer: fine) {
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .wrapper {
+    background-color: #282828;
+    border-radius: 8px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .menu {
+    font-family: monospace;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    word-spacing: 10px;
+  }
+
+  .mainwindow {
+    padding: 40px 40px 40px 40px;
+    border-radius: inherit;
+    order: 1;
+    flex: 1;
+    background-color: white;
+    text-align: justify;
+  }
+
+  input {
+    width: 45px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    vertical-align: middle;
+  }
+
+  select {
+    width: 65px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    vertical-align: middle;
+  }
+
+  button {
+    margin-top: 2px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 110px;
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  img {
+    height: 50px;
+  }
+}
+
 @media (pointer: coarse) {
   .wrapper {
     background-color: #282828;
@@ -40,22 +124,6 @@ body {
     margin-top: 20px;
   }
 
-  .container {
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .window {
-    margin-right: 20px;
-    padding: inherit;
-    border-radius: 8px;
-    background-color: gray;
-    order: 0;
-    line-height: 40px;
-    padding: 10px 5px 10px 10px;
-  }
-
   .mainwindow {
     padding: 40px 10px 40px 40px;
     border-radius: inherit;
@@ -63,12 +131,6 @@ body {
     flex: 1;
     background-color: white;
     text-align: justify;
-  }
-
-  .result {
-    text-align: center;
-    word-spacing: 30px;
-    line-height: 60px;
   }
 
   input {
@@ -98,149 +160,51 @@ body {
     vertical-align: middle;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   img {
     height: 80px;
   }
-
-  .base {
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px black;
-    background-color: yellow;
-  }
-
-  .skill {
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px white;
-    background-color: #FF33FF;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
-
-  .item {
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px white;
-    background-color: white;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
 }
 
-@media (pointer: fine) {
+.container {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
 
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+.window {
+  margin-right: 20px;
+  padding: inherit;
+  border-radius: 8px;
+  background-color: gray;
+  order: 0;
+  line-height: 40px;
+  padding: 10px 5px 10px 10px;
+}
 
-  .wrapper {
-    background-color: #282828;
-    border-radius: 8px;
-    width: 600px;
-    margin: 0 auto;
-    padding: 15px 15px 15px 15px;
-  }
+.result {
+  text-align: center;
+  word-spacing: 30px;
+  line-height: 60px;
+}
 
-  .container {
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-  }
+.base {
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px black;
+  background-color: yellow;
+}
 
-  .menu {
-    font-family: monospace;
-    font-weight: 500;
-    border-radius: 8px;
-    text-align: center;
-    /* text-decoration: overline underline; */
-    color: white;
-    text-shadow: 0px 0px 20px black;
-    word-spacing: 10px;
-  }
+.skill {
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px white;
+  background-color: #FF33FF;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
 
-  .window {
-    margin-right: 20px;
-    padding: inherit;
-    border-radius: 8px;
-    background-color: gray;
-    order: 0;
-    line-height: 40px;
-    padding: 10px 5px 10px 10px;
-  }
-
-  .mainwindow {
-    padding: 40px 32px 40px 40px;
-    border-radius: inherit;
-    order: 1;
-    flex: 1;
-    background-color: white;
-    text-align: justify;
-  }
-
-  .result {
-    text-align: center;
-    word-spacing: 30px;
-    line-height: 60px;
-  }
-
-  input {
-    width: 45px;
-    height: 30px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 8px;
-    vertical-align: middle;
-  }
-
-  select {
-    width: 65px;
-    height: 30px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 8px;
-    vertical-align: middle;
-  }
-
-  button {
-    margin-top: 2px;
-    border-radius: 8px;
-    font-weight: bold;
-    width: 110px;
-    height: 30px;
-    vertical-align: middle;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  img {
-    height: 50px;
-  }
-
-  .base {
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px black;
-    background-color: yellow;
-  }
-
-  .skill {
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px white;
-    background-color: #FF33FF;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
-
-  .item {
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px white;
-    background-color: white;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
+.item {
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px white;
+  background-color: white;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }

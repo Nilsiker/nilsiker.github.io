@@ -29,6 +29,7 @@ img:active {
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
     margin: 0;
   }
 
@@ -45,7 +46,7 @@ img:active {
     border-radius: 8px;
     text-align: center;
     color: white;
-    text-shadow: 0px 0px 20px black;
+    text-shadow: 0 0 20px black;
     word-spacing: 10px;
   }
 
@@ -56,7 +57,7 @@ img:active {
     flex: 1;
     background-color: white;
     text-align: justify;
-    box-shadow: 0px 0px 80px black;
+    box-shadow: 0 0 80px black;
   }
 
   input {
@@ -115,7 +116,7 @@ img:active {
     text-align: center;
     background-color: gray;
     color: white;
-    text-shadow: 0px 0px 20px black;
+    text-shadow: 0 0 20px black;
   }
 
   .profile {
@@ -130,7 +131,7 @@ img:active {
     flex: 1;
     background-color: white;
     text-align: justify;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0 0 10px black;
   }
 
   input {
@@ -173,13 +174,12 @@ img:active {
 
 .window {
   margin-right: 20px;
-  padding: inherit;
   border-radius: 8px;
   background-color: gray;
   order: 0;
   line-height: 40px;
   padding: 10px 5px 10px 10px;
-  box-shadow: 0px 0px 80px black;
+  box-shadow: 0 0 80px black;
 }
 
 .result {
@@ -190,13 +190,13 @@ img:active {
 
 .base {
   border-radius: 4px;
-  box-shadow: 0px 0px 1px black;
+  box-shadow: 0 0 1px black;
   background-color: yellow;
 }
 
 .skill {
   border-radius: 4px;
-  box-shadow: 0px 0px 1px white;
+  box-shadow: 0 0 1px white;
   background-color: #FF33FF;
   -webkit-filter: invert(1);
   filter: invert(1);
@@ -204,7 +204,7 @@ img:active {
 
 .item {
   border-radius: 4px;
-  box-shadow: 0px 0px 1px white;
+  box-shadow: 0 0 1px white;
   background-color: white;
   -webkit-filter: invert(1);
   filter: invert(1);

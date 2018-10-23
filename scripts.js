@@ -5,6 +5,7 @@ function roll(x) {
   var audio = new Audio('media/effect.mp3');
   var bDie = 0;
   var sDie = 0;
+  var iDie = document.getElementById('Gear').value;
   var rand = 0;
 
 
@@ -71,7 +72,7 @@ function roll(x) {
       sDie = document.getElementById('12').value;
       break;
     case '13':
-      sDie = document.getElementById('013').value;
+      sDie = document.getElementById('13').value;
       switch (document.getElementById('Spec').value) {
         case 'STR':
           bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
@@ -102,12 +103,22 @@ function roll(x) {
 
   document.getElementById('result').innerHTML += "<br>";
 
+  sDie = +sDie + +document.getElementById('Bonus').value;
   while (sDie-- && sDie < 30) {
     rand = Math.floor(Math.random() * 6) + 1;
     document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
   }
   audio.play();
   document.getElementById('result').innerHTML += "<br>";
+
+  while (iDie-- && iDie < 30) {
+    rand = Math.floor(Math.random() * 6) + 1;
+    if (rand == 1) {
+      document.getElementById('result').innerHTML += "<img src=\"media/corner-explosion.png\" alt=\"\" class=\"item\"> ";
+    } else {
+      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"item\"> ";
+    }
+  }
 }
 
 function betterRandom() {

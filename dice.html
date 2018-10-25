@@ -44,22 +44,22 @@
 
 
       <div class="window">
-        <button type="button" onclick="roll('STR','0')" style="background: yellow">STR</button>
+        <button type="button" onclick="rollBase('STR')" style="background: yellow">STR</button>
         <input type="number" id="vSTR" onfocus="this.value=''" value="2">
         <input type="number" id="tSTR" onfocus="this.value=''" style="color: red">
         <br>
 
-        <button type="button" onclick="roll('AGI','0')" style="background: yellow">AGI</button>
+        <button type="button" onclick="rollBase('AGI')" style="background: yellow">AGI</button>
         <input type="number" id="vAGI" onfocus="this.value=''" value="2">
         <input type="number" id="tAGI" onfocus="this.value=''" style="color: red">
         <br>
 
-        <button type="button" onclick="roll('WIT','0')" style="background: yellow">WIT</button>
+        <button type="button" onclick="rollBase('WIT')" style="background: yellow">WIT</button>
         <input type="number" id="vWIT" onfocus="this.value=''" value="2">
         <input type="number" id="tWIT" onfocus="this.value=''" style="color: red">
         <br>
 
-        <button type="button" onclick="roll('EMP','0')" style="background: yellow">EMP</button>
+        <button type="button" onclick="rollBase('EMP')" style="background: yellow">EMP</button>
         <input type="number" id="vEMP" onfocus="this.value=''" value="2">
         <input type="number" id="tEMP" onfocus="this.value=''" style="color: red">
 
@@ -116,7 +116,7 @@
         <button type="button" name="Bonus" style="background: green; color: white">Bonus</button>
         <input type="number" id="Bonus" onfocus="this.value=''">
         <br>
-        <button type="button" name="Gear" style="background: black; color: white">Gear</button>
+        <button type="button" name="Gear" onclick="rollArmor()" style="background: black; color: white">Gear</button>
         <input type="number" id="Gear" onfocus="this.value=''">
         <br>
 

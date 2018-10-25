@@ -12,131 +12,112 @@
 <body>
   <div class="wrapper">
 
-    <div class="header">
-      <div class="profile">
-        <a href="https://github.com/Nilsiker/"> <img src="media/nilsiker.png" alt="" title="Check out my GitHub profile!" height="200" style="
-          height: 200px;
-          display: block;
-          margin-top: 10px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 35px;
-          border-radius: 100%;
-          box-shadow: 0px 0px 40px black;
-          ">
-        </a>
-      </div>
-
-      <div class="menu">
-        <h1>
-          <a href="index.html" class="menu"> Home </a>/
-          <a href="projects.html" class="menu" style="color: goldenrod;"> Projects </a>/
-          <a href="about.html" class="menu"> About </a>/
-          <a href="contact.html" class="menu"> Contact </a>
-        </h1>
-      </div>
+    <div class="menu" style="text-align: left">
+      <h2>
+        <a href="projects.html" class="menu" style="color: goldenrod;">⬅ Projects</a>
+      </h2>
     </div>
+  </div>
 
 
 
-    <div class="container">
+  <div class="container">
 
 
 
-      <div class="window">
-        <button type="button" onclick="rollBase('STR')" style="background: yellow">STR</button>
-        <input type="number" id="vSTR" onfocus="this.value=''" value="2">
-        <input type="number" id="tSTR" onfocus="this.value=''" style="color: red">
-        <br>
+    <div class="window">
+      <p style="text-align: center"><b style="color: white">Modifiers</b>
+      <input type="number" id="Bonus" onfocus="this.select();" style="background: green; color: white;">
+      <input type="number" id="Gear" onfocus="this.select();" style="background: black; color: white;">
+      </p>
+      <button type="button" onclick="rollBase('STR')" style="background: yellow">STR</button>
+      <input type="number" id="vSTR" onfocus="this.select();" value="2">
+      <input type="number" id="tSTR" onfocus="this.select();" style="color: red">
+      <br>
 
-        <button type="button" onclick="rollBase('AGI')" style="background: yellow">AGI</button>
-        <input type="number" id="vAGI" onfocus="this.value=''" value="2">
-        <input type="number" id="tAGI" onfocus="this.value=''" style="color: red">
-        <br>
+      <button type="button" onclick="rollBase('AGI')" style="background: yellow">AGI</button>
+      <input type="number" id="vAGI" onfocus="this.select();" value="2">
+      <input type="number" id="tAGI" onfocus="this.select();" style="color: red">
+      <br>
 
-        <button type="button" onclick="rollBase('WIT')" style="background: yellow">WIT</button>
-        <input type="number" id="vWIT" onfocus="this.value=''" value="2">
-        <input type="number" id="tWIT" onfocus="this.value=''" style="color: red">
-        <br>
+      <button type="button" onclick="rollBase('WIT')" style="background: yellow">WIT</button>
+      <input type="number" id="vWIT" onfocus="this.select();" value="2">
+      <input type="number" id="tWIT" onfocus="this.select();" style="color: red">
+      <br>
 
-        <button type="button" onclick="rollBase('EMP')" style="background: yellow">EMP</button>
-        <input type="number" id="vEMP" onfocus="this.value=''" value="2">
-        <input type="number" id="tEMP" onfocus="this.value=''" style="color: red">
+      <button type="button" onclick="rollBase('EMP')" style="background: yellow">EMP</button>
+      <input type="number" id="vEMP" onfocus="this.select();" value="2">
+      <input type="number" id="tEMP" onfocus="this.select();" style="color: red">
 
-        <br>
-        <br>
+      <br>
 
-        <button type="button" onclick="roll('1')" style="background: green; color: white">Endure</button>
-        <input type="number" id="1" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('2')" style="background: green; color: white">Force</button>
-        <input type="number" id="2" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('3')" style="background: green; color: white">Fight</button>
-        <input type="number" id="3" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('4')" style="background: green; color: white">Sneak</button>
-        <input type="number" id="4" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('5')" style="background: green; color: white">Move</button>
-        <input type="number" id="5" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('6')" style="background: green; color: white">Shoot</button>
-        <input type="number" id="6" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('7')" style="background: green; color: white">Scout</button>
-        <input type="number" id="7" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('8')" style="background: green; color: white">Comprehend</button>
-        <input type="number" id="8" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('9')" style="background: green; color: white">Know</button>
-        <input type="number" id="9" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('10')" style="background: green; color: white">Sense</button>
-        <input type="number" id="10" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('11')" style="background: green; color: white">Manipulate</button>
-        <input type="number" id="11" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('12')" style="background: green; color: white">Heal</button>
-        <input type="number" id="12" onfocus="this.value=''">
-        <br>
-        <button type="button" onclick="roll('13')" style="background: green; color: white">Special</button>
-        <input type="number" id="13" onfocus="this.value=''" value="1">
-        <!-- <input type="number" id="113" onfocus="this.value=''" value="2" style="color: black; background: yellow;"> -->
-        <select id="Spec">
-          <option value="STR">STR</option>
-          <option value="AGI">AGI</option>
-          <option value="WIT">WIT</option>
-          <option value="EMP">EMP</option>
-        </select>
-        <br>
-        <br>
-        <button type="button" name="Bonus" style="background: green; color: white">Bonus</button>
-        <input type="number" id="Bonus" onfocus="this.value=''">
-        <br>
-        <button type="button" name="Gear" onclick="rollArmor()" style="background: black; color: white">Gear</button>
-        <input type="number" id="Gear" onfocus="this.value=''">
-        <br>
-
-      </div>
-
-      <div class="mainwindow">
-        <p id="result" class="result"></p>
-      </div>
+      <button type="button" onclick="roll('1')" style="background: green; color: white">Endure</button>
+      <input type="number" id="1" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('2')" style="background: green; color: white">Force</button>
+      <input type="number" id="2" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('3')" style="background: green; color: white">Fight</button>
+      <input type="number" id="3" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('4')" style="background: green; color: white">Sneak</button>
+      <input type="number" id="4" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('5')" style="background: green; color: white">Move</button>
+      <input type="number" id="5" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('6')" style="background: green; color: white">Shoot</button>
+      <input type="number" id="6" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('7')" style="background: green; color: white">Scout</button>
+      <input type="number" id="7" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('8')" style="background: green; color: white">Comprehend</button>
+      <input type="number" id="8" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('9')" style="background: green; color: white">Know</button>
+      <input type="number" id="9" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('10')" style="background: green; color: white">Sense</button>
+      <input type="number" id="10" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('11')" style="background: green; color: white">Manipulate</button>
+      <input type="number" id="11" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('12')" style="background: green; color: white">Heal</button>
+      <input type="number" id="12" onfocus="this.select();">
+      <br>
+      <button type="button" onclick="roll('13')" style="background: green; color: white">Special</button>
+      <input type="number" id="13" onfocus="this.select();" value="1">
+      <select id="Spec">
+        <option value="STR">STR</option>
+        <option value="AGI">AGI</option>
+        <option value="WIT">WIT</option>
+        <option value="EMP">EMP</option>
+      </select>
+      <br>
+      <button type="button" name="Armor" onclick="rollArmor()" style="background: black; color: white">Armor</button>
+      <input type="number" id="Armor" onfocus="this.select();">
+      <input type="number" id="aDamage" onfocus="this.select();" style="color: red">
+      <br>
 
     </div>
 
+    <div class="mainwindow">
+      <p id="result" class="result"></p>
+    </div>
+
+  </div>
 
 
 
-    <p style="color: gray; text-align: center"> All icons are taken from
-      <a href="https://game-icons.net" style="color: white"> game-icons.net </a>
-      under the
-      <a href="https://creativecommons.org/licenses/by/3.0/" style="color:white">CC BY 3.0</a>
-      license
-    </p>
+
+  <p style="color: gray; text-align: center"> All icons are taken from
+    <a href="https://game-icons.net" style="color: white"> game-icons.net </a>
+    under the
+    <a href="https://creativecommons.org/licenses/by/3.0/" style="color:white">CC BY 3.0</a>
+    license
+  </p>
   </div>
 </body>
 

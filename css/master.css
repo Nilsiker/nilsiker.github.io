@@ -229,3 +229,7 @@ img:active {
   background: black;
   color: white;
 }
+
+.damage{
+  color: red;
+}

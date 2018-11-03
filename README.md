@@ -11,6 +11,6 @@ I use [Git](https://git-scm.com/) for versioning. Right here! WYSIWYG!
 * Andreas Nilsson - *sloppy code noodlings* - [Nilsiker](https://nilsiker.gitlab.io)
 
 ## Acknowledgements
-* [Max Wällstedt](https://github.com/MaxWallstedt) - *for letting loose the computer scientist in me during upper secondary school*
+* [Max Wällstedt](https://GitLab.com/MaxWallstedt) - *for letting loose the computer scientist in me during upper secondary school*
 * [Campus Helsingborg](http://www.lth.se/english/education/bachelors-programmes/computer-science-and-engineering/) - *for inspirational and educational drive*
 * [Free League Publishing](http://frialigan.se/en/startpage/) - *for being superb peeps and creating a killer ruleset*

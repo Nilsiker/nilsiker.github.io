@@ -55,6 +55,7 @@ select {
 
 button {
   margin-top: 2px;
+  color: black;
   font-weight: bold;
   width: 100px;
   height: 30px;

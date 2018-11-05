@@ -30,6 +30,40 @@ img:active {
   filter: opacity(70%);
 }
 
+img.base, img.skill, img.item {
+  height: 50px;
+  box-shadow: 0 0 3px black;
+}
+
+input {
+  width: 45px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+select {
+  width: 65px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+button {
+  margin-top: 2px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  vertical-align: middle;
+  border-width: medium;
+  border-color: black;
+  border-radius: 4px;
+}
+
 .project {
   font-family: sans-serif;
   color: black;
@@ -51,6 +85,12 @@ img:active {
   word-spacing: 10px;
 }
 
+.container {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
 .mainwindow {
   padding: 40px 40px 40px 40px;
   border-radius: inherit;
@@ -59,43 +99,6 @@ img:active {
   background-color: white;
   text-align: justify;
   box-shadow: 0 0 80px black;
-}
-
-input {
-  width: 45px;
-  height: 30px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 8px;
-  vertical-align: middle;
-}
-
-select {
-  width: 65px;
-  height: 30px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 8px;
-  vertical-align: middle;
-}
-
-button {
-  margin-top: 2px;
-  border-radius: 8px;
-  font-weight: bold;
-  width: 100px;
-  height: 30px;
-  vertical-align: middle;
-}
-
-img.base, img.skill, img.item {
-  height: 50px;
-}
-
-.container {
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
 }
 
 .window {
@@ -115,43 +118,22 @@ img.base, img.skill, img.item {
 }
 
 .base, .base:active {
-  border-radius: 4px;
-  box-shadow: 0 0 1px black;
   background-color: yellow;
   filter: invert(0);
 }
 
 .skill, .skill:active {
-  border-radius: 4px;
-  box-shadow: 0 0 1px white;
-  background-color: #FF33FF;
+  background-color: #FF7FFF;
   -webkit-filter: invert(1);
   -moz-filter: invert(1);
   filter: invert(1);
 }
 
 .item, .item:active {
-  border-radius: 4px;
-  box-shadow: 0 0 1px white;
   background-color: white;
   -webkit-filter: invert(1);
   -moz-filter: invert(1);
   filter: invert(1);
-}
-
-.bbase{
-  background: yellow;
-  color: black;
-}
-
-.bskill{
-  background: green;
-  color: white;
-}
-
-.bitem{
-  background: black;
-  color: white;
 }
 
 .damage{

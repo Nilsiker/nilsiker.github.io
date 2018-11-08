@@ -14,6 +14,7 @@ var iLeft;
 var armorDamage;
 var damage;
 var game;
+var cap = 20;
 
 function setGame(game){
     this.game = game;
@@ -88,7 +89,9 @@ function setBase(x) {
       }
       break;
   }
+  if (bDie > cap) { return; }
   bLeft = bDie;
+  
 }
 
 function setSkill(x) {
@@ -151,21 +154,25 @@ function setSkill(x) {
       break;
   }
   sDie = +sDie + +document.getElementById('Bonus').value;
+  if (sDie > cap) { return; }
   sLeft = sDie;
-}
+  }
+
 
 function setItem() {
   iDie = document.getElementById("Gear").value;
+  if (iDie > cap) { return; }
   iLeft = iDie;
-}
+  }
 
-function setArmor(x) {
+function setArmor() {
   armorDamage = 0;
   armor = document.getElementById('Armor').value - document.getElementById("aDamage").value;
 }
 
 function rollBase(x) {
   setBase(x);
+  
   bSucc = 0;
   sSucc = 0;
   iSucc = 0;
@@ -179,7 +186,7 @@ function rollBase(x) {
     document.getElementById('result').innerHTML = "<button type=\"button\" onclick=\"push(\'" + x + "\')\" style=\"background: red; color: white;\">PUSH</button><br><br>";
   }
 
-  while (bDie && bDie < 30 && bDie > 0) {
+  while (bDie && bDie < cap && bDie > 0) {
     bDie--;
     rand = Math.floor(Math.random() * 6) + 1;
     if (rand == 1) {
@@ -199,7 +206,7 @@ function rollBase(x) {
 
 function rollSkill(x) {
   setSkill(x);
-  while (sDie && sDie < 30 && sDie > 0) {
+  while (sDie && sDie < cap && sDie > 0) {
     sDie--;
     rand = Math.floor(Math.random() * 6) + 1;
     if (rand == 6) {
@@ -213,7 +220,7 @@ function rollSkill(x) {
 
 function rollItem() {
   setItem();
-  while (iDie && iDie < 30 && iDie > 0) {
+  while (iDie && iDie < cap && iDie > 0) {
     iDie--;
     rand = Math.floor(Math.random() * 6) + 1;
     if (rand == 1) {
@@ -418,9 +425,10 @@ function push(x) {
   }
 }
 
-function rollArtefact(level){
+function rollArtefact(){
+  var level = document.getElementById('artlevel').value;
   var temp;
-
+  if (level != ""){ playSound(); }
   if (level == 1){
     temp = Math.floor(Math.random() * 8) + 1;
 
@@ -432,20 +440,21 @@ function rollArtefact(level){
   }
 
   if (temp < 7){
-    document.getElementById('result').innerHTML += "<img src=\"media/fbl/" + temp + ".png\" alt=\"\" class=\"item\"> ";
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/" + temp + ".png\" alt=\"\" class=\"art" + level + "\"> ";
   }
   else if (temp == 7){
-    document.getElementById('result').innerHTML += "<img src=\"media/fbl/6.png\" alt=\"\" class=\"item\"> ";
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/6.png\" alt=\"\" class=\"art" + level + "\"> ";
   }
   else if (temp == 8 || temp == 9){
-    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art2.png\" alt=\"\" class=\"item\"> ";
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art2.png\" alt=\"\" class=\"art" + level + "\"> ";
   }
   else if (temp == 10 || temp == 11){
-    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art3.png\" alt=\"\" class=\"item\"> ";
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art3.png\" alt=\"\" class=\"art" + level + "\">";
   }
   else if (temp == 12){
-    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art4.png\" alt=\"\" class=\"item\"> ";
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art4.png\" alt=\"\" class=\"art" + level + "\"> ";
   }
+  document.getElementById('result').innerHTML += "<br>";
 }
 
 function flute() {

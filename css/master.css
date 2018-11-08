@@ -158,3 +158,18 @@ img.fblskill, img.fblskill:active{
 .damage{
   color: red;
 }
+
+.art1{
+  background-color: #ff75ff;
+  filter: invert(1);
+}
+
+.art2{
+  background-color: #E44C0A;
+  filter: invert(1);
+}
+
+.art3{
+  background-color: #FF6600;
+  
+}

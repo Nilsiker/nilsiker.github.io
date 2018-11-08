@@ -13,6 +13,11 @@ var sLeft;
 var iLeft;
 var armorDamage;
 var damage;
+var game;
+
+function setGame(game){
+    this.game = game;
+}
 
 function setBase(x) {
   switch (x) {
@@ -178,11 +183,11 @@ function rollBase(x) {
     bDie--;
     rand = Math.floor(Math.random() * 6) + 1;
     if (rand == 1) {
-      document.getElementById('result').innerHTML += "<img src=\"media/biohazard.png\" alt=\"\" class=\"base\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/trauma.png\" alt=\"\" class=\"" + game + "base\"> ";
       bLeft--;
       bTrauma++;
     } else {
-      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"base\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"" + game + "base\"> ";
       if (rand == 6) {
         bLeft--;
         bSucc++;
@@ -201,7 +206,7 @@ function rollSkill(x) {
       sLeft--;
       sSucc++;
     }
-    document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
+    document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"" + game + "skill\"> ";
   }
   document.getElementById('result').innerHTML += "<br>";
 }
@@ -212,11 +217,11 @@ function rollItem() {
     iDie--;
     rand = Math.floor(Math.random() * 6) + 1;
     if (rand == 1) {
-      document.getElementById('result').innerHTML += "<img src=\"media/corner-explosion.png\" alt=\"\" class=\"item\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/gear.png\" alt=\"\" class=\"item\"> ";
       iLeft--;
       iTrauma++;
     } else {
-      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"item\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"item\"> ";
       if (rand == 6) {
         iLeft--;
         iSucc++;
@@ -228,17 +233,21 @@ function rollItem() {
 
 function rollArmor() {
   setArmor();
-  playSound();
-  document.getElementById('result').innerHTML = null;
-  document.getElementById('result').innerHTML += "<button type=\"button\" onclick=\"damageArmor()\" style=\"background: red; color: white;\">Damaged</button><br><br>";
+  
+  if (armor > 0){
+    document.getElementById('result').innerHTML = null;
+    playSound();
+    document.getElementById('result').innerHTML += "<button type=\"button\" onclick=\"damageArmor()\" style=\"background: red; color: white;\">Damaged</button><br><br>";
+  }
+  
   while (armor > 0) {
     armor--;
     rand = Math.floor(Math.random() * 6) + 1;
     if (rand == 1) {
-      document.getElementById('result').innerHTML += "<img src=\"media/corner-explosion.png\" alt=\"\" class=\"item\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/gear.png\" alt=\"\" class=\"item\"> ";
       armorDamage++;
     } else {
-      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"item\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"item\"> ";
     }
   }
   document.getElementById('result').innerHTML += "<br>";
@@ -348,28 +357,28 @@ function push(x) {
 
     while (bSucc > 0) {
       bSucc--;
-      document.getElementById('result').innerHTML += "<img src=\"media/6.png\" alt=\"\" class=\"base\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/6.png\" alt=\"\" class=\"" + game + "base\"> ";
     }
 
     while (sSucc > 0) {
       sSucc--;
-      document.getElementById('result').innerHTML += "<img src=\"media/6.png\" alt=\"\" class=\"skill\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/6.png\" alt=\"\" class=\"" + game + "skill\"> ";
     }
 
     while (iSucc > 0) {
       iSucc--;
-      document.getElementById('result').innerHTML += "<img src=\"media/6.png\" alt=\"\" class=\"item\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/6.png\" alt=\"\" class=\"item\"> ";
     }
 
     while (bTrauma > 0) {
       bTrauma--;
       damage++;
-      document.getElementById('result').innerHTML += "<img src=\"media/biohazard.png\" alt=\"\" class=\"base\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/trauma.png\" alt=\"\" class=\"" + game + "base\"> ";
     }
 
     while (iTrauma > 0) {
       iTrauma--;
-      document.getElementById('result').innerHTML += "<img src=\"media/corner-explosion.png\" alt=\"\" class=\"item\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/gear.png\" alt=\"\" class=\"item\"> ";
     }
     document.getElementById('result').innerHTML += "<br>";
 
@@ -377,10 +386,10 @@ function push(x) {
       bLeft--;
       rand = Math.floor(Math.random() * 6) + 1;
       if (rand == 1) {
-        document.getElementById('result').innerHTML += "<img src=\"media/biohazard.png\" alt=\"\" class=\"base\"> ";
+        document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/trauma.png\" alt=\"\" class=\"" + game + "base\"> ";
         damage++;
       } else {
-        document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"base\"> ";
+        document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"" + game + "base\"> ";
       }
     }
     document.getElementById('result').innerHTML += "<br>";
@@ -388,7 +397,7 @@ function push(x) {
     while (sLeft > 0) {
       sLeft--;
       rand = Math.floor(Math.random() * 6) + 1;
-      document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"skill\"> ";
+      document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"" + game + "skill\"> ";
     }
     document.getElementById('result').innerHTML += "<br>";
 
@@ -396,9 +405,9 @@ function push(x) {
       iLeft--;
       rand = Math.floor(Math.random() * 6) + 1;
       if (rand == 1) {
-        document.getElementById('result').innerHTML += "<img src=\"media/corner-explosion.png\" alt=\"\" class=\"item\"> ";
+        document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/gear.png\" alt=\"\" class=\"item\"> ";
       } else {
-        document.getElementById('result').innerHTML += "<img src=\"media/" + rand + ".png\" alt=\"\" class=\"item\"> ";
+        document.getElementById('result').innerHTML += "<img src=\"media/" + game + "/" + rand + ".png\" alt=\"\" class=\"item\"> ";
       }
     }
     document.getElementById('result').innerHTML += "<br>";
@@ -406,6 +415,36 @@ function push(x) {
       damage--;
       damageStat(x);
     }
+  }
+}
+
+function rollArtefact(level){
+  var temp;
+
+  if (level == 1){
+    temp = Math.floor(Math.random() * 8) + 1;
+
+  }else if (level == 2){
+    temp = Math.floor(Math.random() * 10) + 1;
+
+  }else if( level == 3){
+    temp = Math.floor(Math.random() * 12) + 1;
+  }
+
+  if (temp < 7){
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/" + temp + ".png\" alt=\"\" class=\"item\"> ";
+  }
+  else if (temp == 7){
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/6.png\" alt=\"\" class=\"item\"> ";
+  }
+  else if (temp == 8 || temp == 9){
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art2.png\" alt=\"\" class=\"item\"> ";
+  }
+  else if (temp == 10 || temp == 11){
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art3.png\" alt=\"\" class=\"item\"> ";
+  }
+  else if (temp == 12){
+    document.getElementById('result').innerHTML += "<img src=\"media/fbl/art4.png\" alt=\"\" class=\"item\"> ";
   }
 }
 

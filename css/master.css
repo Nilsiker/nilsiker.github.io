@@ -30,7 +30,7 @@ img:active {
   filter: opacity(70%);
 }
 
-img.base, img.skill, img.item {
+img {
   height: 50px;
   box-shadow: 0 0 3px black;
   border-radius: 4px;
@@ -120,12 +120,12 @@ button {
   line-height: 60px;
 }
 
-.base, .base:active {
+.mutbase, .mutbase:active {
   background-color: yellow;
   filter: invert(0);
 }
 
-.skill, .skill:active {
+.mutskill, .mutskill:active {
   background-color: #FF7FFF;
   -webkit-filter: invert(1);
   -moz-filter: invert(1);
@@ -137,6 +137,22 @@ button {
   -webkit-filter: invert(1);
   -moz-filter: invert(1);
   filter: invert(1);
+}
+
+.fblbase, .fblbase:active {
+  background-color: beige;
+  filter: invert(0);
+}
+
+.fblskill, .fblskill:active {
+  background-color: #7fffff ;
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
+  filter: invert(1);
+  width: 130px;
+}
+img.fblskill, img.fblskill:active{
+  width: 50px;
 }
 
 .damage{

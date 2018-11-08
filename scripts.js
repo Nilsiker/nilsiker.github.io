@@ -95,68 +95,30 @@ function setBase(x) {
 }
 
 function setSkill(x) {
-  switch (x) {
-    case '1':
-      sDie = document.getElementById('1').value;
-      break;
-    case '2':
-      sDie = document.getElementById('2').value;
-      break;
-    case '3':
-      sDie = document.getElementById('3').value;
-      break;
-    case '4':
-      sDie = document.getElementById('4').value;
-      break;
-    case '5':
-      sDie = document.getElementById('5').value;
-      break;
-    case '6':
-      sDie = document.getElementById('6').value;
-      break;
-    case '7':
-      sDie = document.getElementById('7').value;
-      break;
-    case '8':
-      sDie = document.getElementById('8').value;
-      break;
-    case '9':
-      sDie = document.getElementById('9').value;
-      break;
-    case '10':
-      sDie = document.getElementById('10').value;
-      break;
-    case '11':
-      sDie = document.getElementById('11').value;
-      break;
-    case '12':
-
-      sDie = document.getElementById('12').value;
-      break;
-    case '13':
-      sDie = document.getElementById('13').value;
-      switch (document.getElementById('Spec').value) {
-        case 'STR':
-          bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
-          break;
-        case 'AGI':
-          bDie = document.getElementById('vAGI').value - document.getElementById('tAGI').value;
-          break;
-        case 'WIT':
-          bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;;
-          break;
-        case 'EMP':
-          bDie = document.getElementById('vEMP').value - document.getElementById('tEMP').value;
-          break;
-        default:
-          break;
-      }
-      break;
+  sDie = document.getElementById(x).value;
+  if (x == 13){
+    switch (document.getElementById('Spec').value) {
+      case 'STR':
+        bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
+        break;
+      case 'AGI':
+        bDie = document.getElementById('vAGI').value - document.getElementById('tAGI').value;
+        break;
+      case 'WIT':
+        bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;;
+        break;
+      case 'EMP':
+        bDie = document.getElementById('vEMP').value - document.getElementById('tEMP').value;
+        break;
+      default:
+        break;
+    }
   }
+
   sDie = +sDie + +document.getElementById('Bonus').value;
   if (sDie > cap) { return; }
   sLeft = sDie;
-  }
+}
 
 
 function setItem() {

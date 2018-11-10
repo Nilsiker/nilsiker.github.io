@@ -379,8 +379,11 @@ function push(x) {
       damage--;
       damageStat(x);
     }
+    showDice();
+  }else{
+    hideDice();
   }
-  showDice();
+  
 }
 
 function rollArtefact(x){

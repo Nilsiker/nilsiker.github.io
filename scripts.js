@@ -16,6 +16,14 @@ var damage;
 var game;
 var cap = 20;
 
+function hideDice(){
+  document.getElementById('dicewin').style.visibility="hidden";
+}
+
+function showDice(){
+  document.getElementById('dicewin').style.visibility="visible";
+}
+
 function setGame(game){
     this.game = game;
 }
@@ -122,10 +130,12 @@ function rollBase(x) {
   iTrauma = 0;
 
   document.getElementById('result').innerHTML = null;
+  document.getElementById('dicebuttons').innerHTML = null;
 
   if (bDie > 0 || sDie > 0 || iDie > 0) {
+    showDice();
     playSound();
-    document.getElementById('result').innerHTML = "<button type=\"button\" onclick=\"push(\'" + x + "\')\" style=\"background: red; color: white;\">PUSH</button><br><br>";
+    document.getElementById('dicebuttons').innerHTML = "<button type=\"button\" onclick=\"push(\'" + x + "\')\" style=\"background: red; color: white;\">PUSH</button><br><br>";
   }
 
   while (bDie && bDie < cap && bDie > 0) {
@@ -184,9 +194,11 @@ function rollArmor() {
   setArmor();
   
   if (armor > 0){
+    showDice();
     document.getElementById('result').innerHTML = null;
+    document.getElementById('dicebuttons').innerHTML = null;
     playSound();
-    document.getElementById('result').innerHTML += "<button type=\"button\" onclick=\"damageArmor()\" style=\"background: red; color: white;\">Damaged</button><br><br>";
+    document.getElementById('dicebuttons').innerHTML += "<button type=\"button\" onclick=\"damageArmor()\" style=\"background: red; color: white;\">Damaged</button><br><br>";
   }
   
   while (armor > 0) {
@@ -208,6 +220,7 @@ function damageArmor() {
     armorDamage--;
     document.getElementById("aDamage").value++;
   }
+  hideDice();
 }
 
 function damageStat(x) {
@@ -299,6 +312,8 @@ function roll(x) {
 
 function push(x) {
   document.getElementById('result').innerHTML = null;
+  document.getElementById('dicebuttons').innerHTML = null;
+  
 
   if (bLeft > 0 || sLeft > 0 || iLeft > 0) {
     damage = 0;
@@ -365,12 +380,16 @@ function push(x) {
       damageStat(x);
     }
   }
+  showDice();
 }
 
-function rollArtefact(){
-  var level = document.getElementById('artlevel').value;
+function rollArtefact(x){
+  var level = x;
   var temp;
-  if (level != ""){ playSound(); }
+  if (level != ""){ 
+    playSound(); 
+    showDice();
+  }
   if (level == 1){
     temp = Math.floor(Math.random() * 8) + 1;
 

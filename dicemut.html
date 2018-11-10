@@ -10,7 +10,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 
-<body onload="setGame('mut')">
+<body onload="setGame('mut'); hideDice()">
   <div class="wrapper">
     <div class="menu" style="text-align: left">
       <h2>
@@ -32,7 +32,7 @@
       <button type="button" onclick="rollBase('STR')" class="mutbase">STR</button>
       <input type="number" id="vSTR" onfocus="this.select();" value="2">
       <input type="number" id="tSTR" onfocus="this.select();" class="damage">
-      <br>
+      
 
       <button type="button" onclick="rollBase('AGI')" class="mutbase">AGI</button>
       <input type="number" id="vAGI" onfocus="this.select();" value="2">
@@ -42,7 +42,7 @@
       <button type="button" onclick="rollBase('WIT')" class="mutbase">WIT</button>
       <input type="number" id="vWIT" onfocus="this.select();" value="2">
       <input type="number" id="tWIT" onfocus="this.select();" class="damage">
-      <br>
+ 
 
       <button type="button" onclick="rollBase('EMP')" class="mutbase">EMP</button>
       <input type="number" id="vEMP" onfocus="this.select();" value="2">
@@ -52,37 +52,37 @@
 
       <button type="button" onclick="roll('1')" class="mutskill">Endure</button>
       <input type="number" id="1" onfocus="this.select();">
-      <br>
+
       <button type="button" onclick="roll('2')" class="mutskill">Force</button>
       <input type="number" id="2" onfocus="this.select();">
       <br>
       <button type="button" onclick="roll('3')" class="mutskill">Fight</button>
       <input type="number" id="3" onfocus="this.select();">
-      <br>
+
       <button type="button" onclick="roll('4')" class="mutskill">Sneak</button>
       <input type="number" id="4" onfocus="this.select();">
       <br>
       <button type="button" onclick="roll('5')" class="mutskill">Move</button>
       <input type="number" id="5" onfocus="this.select();">
-      <br>
+   
       <button type="button" onclick="roll('6')" class="mutskill">Shoot</button>
       <input type="number" id="6" onfocus="this.select();">
       <br>
       <button type="button" onclick="roll('7')" class="mutskill">Scout</button>
       <input type="number" id="7" onfocus="this.select();">
-      <br>
+   
       <button type="button" onclick="roll('8')" class="mutskill">Comprehend</button>
       <input type="number" id="8" onfocus="this.select();">
       <br>
       <button type="button" onclick="roll('9')" class="mutskill">Know</button>
       <input type="number" id="9" onfocus="this.select();">
-      <br>
+
       <button type="button" onclick="roll('10')" class="mutskill">Sense</button>
       <input type="number" id="10" onfocus="this.select();">
       <br>
       <button type="button" onclick="roll('11')" class="mutskill">Manipulate</button>
       <input type="number" id="11" onfocus="this.select();">
-      <br>
+    
       <button type="button" onclick="roll('12')" class="mutskill">Heal</button>
       <input type="number" id="12" onfocus="this.select();">
       <br>
@@ -101,8 +101,9 @@
       <br>
     </div>
 
-    <div class="mainwindow">
-      <p id="result" class="result"></p>
+    <div class="dicewindow" id="dicewin">
+      <p id="dicebuttons"></p>
+      <p id="result" class="result" onclick="hideDice()"></p>
     </div>
   </div>
 

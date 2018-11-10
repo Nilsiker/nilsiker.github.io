@@ -38,7 +38,7 @@ img {
 
 input {
   width: 45px;
-  height: 30px;
+  height: 45px;
   font-size: 20px;
   text-align: center;
   border-radius: 4px;
@@ -60,7 +60,7 @@ button {
   font-family: fantasy;
   font-size: 16px;
   width: 100px;
-  height: 30px;
+  height: 50px;
   vertical-align: middle;
   border-width: 2px;
   border-color: black;
@@ -74,7 +74,7 @@ button {
 
 .wrapper {
   border-radius: 8px;
-  width: 600px;
+  width: 500px;
   margin: 0 auto;
   padding: 15px 15px 15px 15px;
 }
@@ -91,25 +91,26 @@ button {
 .container {
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.mainwindow {
+.dicewindow {
   padding: 40px 40px 40px 40px;
+  position: absolute;
+  width: 420px;
+  margin: unset;
   border-radius: inherit;
-  order: 1;
-  flex: 1;
   background-color: white;
-  text-align: justify;
+  text-align: center;
   box-shadow: 0 0 80px black;
 }
 
 .window {
-  margin-right: 20px;
+  text-align: center;
   border-radius: inherit;
   background-color: gray;
   order: 0;
-  line-height: 40px;
+  line-height: 60px;
   padding: 10px 5px 10px 10px;
   box-shadow: 0 0 80px black;
 }
@@ -151,12 +152,20 @@ button {
   filter: invert(1);
   width: 130px;
 }
-img.fblskill, img.fblskill:active{
+img.fblskill, img.fblskill:active, img.fblbase, img.fblbase:active{
   width: 50px;
+  height: 50px;
 }
 
 .damage{
   color: red;
+  background-color: transparent;
+  border: none;
+}
+
+.pride{
+  background-color: goldenrod; 
+  color: black;
 }
 
 .art1{

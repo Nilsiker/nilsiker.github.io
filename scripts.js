@@ -23,51 +23,31 @@ function setGame(game){
 function setBase(x) {
   switch (x) {
     case 'STR':
+    case '1':
+    case '2':
+    case '3':
+    case '31':
       bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
       break;
     case 'AGI':
+    case '4':
+    case '5':
+    case '6':
+    case '61':
       bDie = document.getElementById('vAGI').value - document.getElementById('tAGI').value;
       break;
     case 'WIT':
-      bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;;
+    case '7':
+    case '8':
+    case '9':
+    case '91':
+      bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;
       break;
     case 'EMP':
-      bDie = document.getElementById('vEMP').value - document.getElementById('tEMP').value;
-      break;
-    case '1':
-      bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
-      break;
-    case '2':
-      bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
-      break;
-    case '3':
-      bDie = document.getElementById('vSTR').value - document.getElementById('tSTR').value;
-      break;
-    case '4':
-      bDie = document.getElementById('vAGI').value - document.getElementById('tAGI').value;
-      break;
-    case '5':
-      bDie = document.getElementById('vAGI').value - document.getElementById('tAGI').value;
-      break;
-    case '6':
-      bDie = document.getElementById('vAGI').value - document.getElementById('tAGI').value;
-      break;
-    case '7':
-      bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;
-      break;
-    case '8':
-      bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;
-      break;
-    case '9':
-      bDie = document.getElementById('vWIT').value - document.getElementById('tWIT').value;
-      break;
     case '10':
-      bDie = document.getElementById('vEMP').value - document.getElementById('tEMP').value;
-      break;
     case '11':
-      bDie = document.getElementById('vEMP').value - document.getElementById('tEMP').value;
-      break;
     case '12':
+    case '121':
       bDie = document.getElementById('vEMP').value - document.getElementById('tEMP').value;
       break;
     case '13':

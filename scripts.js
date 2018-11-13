@@ -226,51 +226,31 @@ function damageArmor() {
 function damageStat(x) {
   switch (x) {
     case 'STR':
+    case '1':
+    case '2':
+    case '3':
+    case '31':
       document.getElementById('tSTR').value++;
       break;
     case 'AGI':
+    case '4':
+    case '5':
+    case '6':
+    case '61':
       document.getElementById('tAGI').value++;
       break;
     case 'WIT':
+    case '7':
+    case '8':
+    case '9':
+    case '91':
       document.getElementById('tWIT').value++;
       break;
     case 'EMP':
-      document.getElementById('tEMP').value++;
-      break;
-    case '1':
-      document.getElementById("tSTR").value++;
-      break;
-    case '2':
-      document.getElementById('tSTR').value++;
-      break;
-    case '3':
-      document.getElementById('tSTR').value++;
-      break;
-    case '4':
-      document.getElementById('tAGI').value++;
-      break;
-    case '5':
-      document.getElementById('tAGI').value++;
-      break;
-    case '6':
-      document.getElementById('tAGI').value++;
-      break;
-    case '7':
-      document.getElementById('tWIT').value++;
-      break;
-    case '8':
-      document.getElementById('tWIT').value++;
-      break;
-    case '9':
-      document.getElementById('tWIT').value++;
-      break;
     case '10':
-      document.getElementById('tEMP').value++;
-      break;
     case '11':
-      document.getElementById('tEMP').value++;
-      break;
     case '12':
+    case '121':
       document.getElementById('tEMP').value++;
       break;
     case '13':

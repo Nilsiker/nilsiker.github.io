@@ -15,7 +15,7 @@
   <body>
     <div class="webgl-content">
       <a href="projects.html" class="menu" style="color: goldenrod;">⬅ Projects</a>
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div onclick="lockCursor()" id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
@@ -26,7 +26,7 @@
           <li>WASD to move </li>
           <li>Shift to sprint</li>
           <li>Space to jump</li>
-          <li>LMB to punch</li>
+          <li>Ctrl to punch</li>
         </p>
         <br>
         <h2>Currently working on</h2>
@@ -41,3 +41,10 @@
     </div>
   </body>
 </html>
+
+<script>
+    function lockCursor() {
+        var div = document.getElementById("gameContainer");
+        div.requestPointerLock();
+      }
+</script>

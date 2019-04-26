@@ -15,7 +15,7 @@
   <body>
     <div class="webgl-content">
       <a href="projects.html" class="menu" style="color: goldenrod;">⬅ Projects</a>
-      <div onclick="lockCursor()" id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
@@ -26,8 +26,9 @@
           <li>WASD to move </li>
           <li>Shift to sprint</li>
           <li>Space to jump</li>
-          <li>E to punch</li>
-          <li>F to lock-on</li>
+          <li>LMB to punch</li>
+          <li>MMB to lock-on</li>
+          <li>Scroll to cycle targets</li>
         </p>
         <br>
         <h2>Currently working on</h2>
@@ -36,16 +37,10 @@
           <li>Proper combat handling</li>
           <li>Animation control</li>
           <li>Combat feedback</li>
+          <li>Do away with dummy Inventory</li>
 
         </p>
       </div>
     </div>
   </body>
 </html>
-
-<script>
-    function lockCursor() {
-        var div = document.getElementById("gameContainer");
-        div.requestPointerLock();
-      }
-</script>

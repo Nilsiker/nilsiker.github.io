@@ -1,0 +1,9 @@
+body{
+  background-color: rgb(73, 73, 73);
+}
+
+.profile{
+  margin-top: 4%;
+  text-align: center;
+  display: none;
+}

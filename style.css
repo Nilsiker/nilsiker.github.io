@@ -9,14 +9,15 @@ body {
 h1 {
     font-family: 'Press Start 2P',
         cursive;
-    text-shadow: 0 3px 2px black;
+    text-shadow: 0 4px 2px black;
 
 }
 
 hr {
     border-color: white;
-    box-shadow: 0 4px 2px black;
-    width: 500px;
+    box-shadow: 0 2px 2px black;
+    border-width: 2px;
+    width: 100%;
 }
 
 h3 {

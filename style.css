@@ -38,14 +38,28 @@ h3 {
 
 #navbar {
     background-color: rgb(37, 37, 37);
+    font-size: 1.4em;
 }
 
 .navbar-dark .navbar-brand {
-    color: gray;
+    color: rgba(255,255,255,.5);
+    font-size: 1.4em;
 }
 
-.nav-link{
-    color:gray;
+#navbar li button{
+    color: rgba(255,255,255,.5);
+    padding: 8px;
+    border: none;
+    background: none;
+    outline: 0;
+}
+
+#navbar li button:hover{
+    color:whitesmoke;
+}
+
+.nav-item{
+    margin-left: 40px;
 }
 
 #footer {
@@ -83,12 +97,12 @@ h3 {
     border: none;
 }
 
-.jumbotron{
+#index .jumbotron{
     padding-top: 40px;
     opacity: 0.8;
 }
 
-.jumbotron:hover{
+#index .jumbotron:hover{
     box-shadow: 0 0 20px black;
     opacity: 1;
 }

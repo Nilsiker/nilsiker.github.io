@@ -3,7 +3,6 @@ body {
     background: url(https://images.unsplash.com/photo-1426260193283-c4daed7c2024?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
 
 h1 {
@@ -13,7 +12,7 @@ h1 {
 
 }
 
-hr {
+#titlecard hr {
     border-color: white;
     box-shadow: 0 2px 2px black;
     border-width: 2px;
@@ -26,11 +25,64 @@ h3 {
     text-shadow: 0 4px 2px black;
 }
 
-#content {
+#titlecard {
     text-align: center;
     padding-top: 25%;
+    color: white;
 }
 
-.navbar {
+#content{
+    padding: 20px;
+}
+
+#navbar {
     background-color: rgb(37, 37, 37)
+}
+
+#footer {
+    background-color: rgb(37, 37, 37);
+}
+
+#footer a i  {
+    color: grey;
+    font-size: 1.8em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.jumbotron a i {
+    color: grey;
+    font-size: 1.8em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.jumbotron .btn-group{
+    display: flex;
+}
+
+.jumbotron .btn{
+    flex: 1;
+}
+
+#footer button{
+    padding: 0;
+    border: none;
+    background: none;
+    outline: 0;
+    color: grey;
+}
+
+.modal-backdrop {
+    z-index: 0 !important;
+}
+
+.thumbnail{
+    height: auto;
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.jumbotron{
+    
 }

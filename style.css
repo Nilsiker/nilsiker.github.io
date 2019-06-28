@@ -1,3 +1,10 @@
+@media screen and (min-width: 960px) {
+    body {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+}
+
 body {
     padding-top: 70px;
     background: url(https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80  );
@@ -33,7 +40,7 @@ h3 {
     width: 100%;
 }
 
-#content{
+#content {
     padding: 20px;
 }
 
@@ -43,23 +50,23 @@ h3 {
 }
 
 .navbar-dark .navbar-brand {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-size: 1.4em;
 }
 
-#navbar li button{
-    color: rgba(255,255,255,.5);
+#navbar li button {
+    color: rgba(255, 255, 255, .5);
     padding: 8px;
     border: none;
     background: none;
     outline: 0;
 }
 
-#navbar li button:hover{
-    color:whitesmoke;
+#navbar li button:hover {
+    color: whitesmoke;
 }
 
-.nav-item{
+.nav-item {
     margin-left: 40px;
 }
 
@@ -67,7 +74,7 @@ h3 {
     background-color: rgb(37, 37, 37);
 }
 
-#footer a i  {
+#footer a i {
     color: grey;
     font-size: 1.8em;
     padding-right: 10px;
@@ -81,7 +88,7 @@ h3 {
     padding-left: 10px;
 }
 
-#footer button{
+#footer button {
     padding: 0;
     border: none;
     background: none;
@@ -93,29 +100,29 @@ h3 {
     z-index: 0 !important;
 }
 
-.img-thumbnail{
+.img-thumbnail {
     background: transparent;
     border: none;
 }
 
-#index .jumbotron{
+#index .jumbotron {
     padding-top: 40px;
     opacity: 0.8;
 }
 
-#index .jumbotron:hover{
+#index .jumbotron:hover {
     box-shadow: 0 0 20px black;
     opacity: 1;
 }
 
-.btn-group{
+.btn-group {
     display: flex;
 }
 
-.btn{
+.btn {
     flex: 1;
 }
 
-.faded{
+.faded {
     opacity: 0.5;
 }

@@ -1,15 +1,32 @@
-# My Personal Website
-For educational and recreational purposes. This is a project to keep my somewhat scarce HTML and CSS skills fresh.
+Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
+=========================
 
-## Getting Started
-Head on over to [the website](https://nilsiker.github.io/) and start critiquing my stuff! I seriously need the help. Take a look at my [Issue Boards](https://github.com/Nilsiker/nilsiker.github.io/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) as well and check out if I have any specific issues I can't resolve. Thanks in advance!
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
 
-## Versioning
-I use [Git](https://git-scm.com/) for versioning. Right here! WYSIWYG!
+## How to use
+ - Place a image in `/img/portfolio/`
+ - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
+ - Create posts to display your projects. Use the follow as an example:
+```txt
+---
+layout: default
+modal-id: 1
+date: 2020-01-18
+img: cabin.png
+alt: image-alt
+project-date: January 2020
+client: The Client
+category: Web Development
+description: The description of the project
 
-## Authors
-* Andreas Nilsson - *sloppy code noodlings* - [Nilsiker](https://nilsiker.github.io)
+---
+```
 
-## Acknowledgements
-* [Max Wällstedt](https://github.com/MaxWallstedt) - *for letting loose the computer scientist in me during upper secondary school*
-* [Campus Helsingborg](http://www.lth.se/english/education/bachelors-programmes/computer-science-and-engineering/) - *for inspirational and educational drive*
+## Demo
+View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
+
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
+
+---------
+For more details, read the [documentation](http://jekyllrb.com/)

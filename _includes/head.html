@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}" />
-    {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}">{% endif %}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nilsiker.github.io/">
+    <meta property="og:title" content="Andreas Nilsson">
+    <meta property="og:description" content="A personal portfolio page for my technical endeavours.">
+    <meta property="og:image"
+        content="img/meta.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nilsiker.github.io/">
+    <meta property="twitter:title" content="Andreas Nilsson">
+    <meta property="twitter:description" content="A personal portfolio page for my technical endeavours.">
+    <meta property="twitter:image" content="img/meta.png">
+
+    {% if site.meta_author %}
+    <meta name="author" content="{{ site.meta_author }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
@@ -13,10 +30,12 @@
     <link rel="stylesheet" href="{{ "/style.css" }}">
 
     <!-- Google verification -->
-    {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+    {% if site.google_verify %}
+    <meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 
     <!-- Bing Verification -->
-    {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+    {% if site.bing_verify %}
+    <meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" }}">

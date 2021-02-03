@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f63f0864.chunk.css",
+    "main.js": "/static/js/main.b64e0407.chunk.js",
+    "main.js.map": "/static/js/main.b64e0407.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.638d06fe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.638d06fe.js.map",
+    "static/js/2.41007ed9.chunk.js": "/static/js/2.41007ed9.chunk.js",
+    "static/js/2.41007ed9.chunk.js.map": "/static/js/2.41007ed9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f63f0864.chunk.css.map": "/static/css/main.f63f0864.chunk.css.map",
+    "static/js/2.41007ed9.chunk.js.LICENSE.txt": "/static/js/2.41007ed9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Masaaki-Regular.b038be68.otf",
+    "static/media/pb.50f6c6f5.png": "/static/media/pb.50f6c6f5.png",
+    "static/media/App.scss": "/static/media/unsplash.80570754.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.638d06fe.js",
+    "static/js/2.41007ed9.chunk.js",
+    "static/css/main.f63f0864.chunk.css",
+    "static/js/main.b64e0407.chunk.js"
+  ]
+}

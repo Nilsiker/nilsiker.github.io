@@ -1,0 +1,85 @@
+<svg height="1400" width="1400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(166,0,0);stop-opacity:1" />
+        </linearGradient>
+        <style>
+            .blue {
+                fill: #1a213a
+            }
+
+            .lightblue {
+                fill: #45648d
+            }
+
+            .skin {
+                fill: #d9ccb0
+            }
+
+            .scruff {
+                fill: #a3967e
+            }
+
+            .hair {
+                fill: #705945
+            }
+
+            .hairshade {
+                fill: #634f3e
+            }
+        </style>
+    </defs>
+    <g transform="scale(100,100)">
+        <rect height="14" width="14" fill="url(#bg)" />
+        <g transform="translate(-1,-1) ">
+            <g class="skin">
+                <rect height="5" width="3" transform="translate(7,5)" />
+                <rect height="3" width="1" transform="translate(7,9)" />
+                <rect height="1" width="1" transform="translate(6,7)" />
+            </g>
+
+            <g class="scruff">
+                <rect height="1" width="1" transform="translate(9,8)" />
+                <rect height="1" width="2" transform="translate(8,9)" />
+            </g>
+
+            <g class="hair">
+
+                <rect height="3" width="1" transform="translate(10,5)" />
+                <rect height="1" width="1" transform="translate(9,5)" />
+                <rect height="1" width="3" transform="translate(7,4)" />
+                <rect height="4" width="1" transform="translate(7,5)" />
+                <rect height="1" width="1" transform="translate(6,10)" />
+                <rect height="1" width="1" transform="translate(5,9)" />
+            </g>
+
+            <g class="hairshade">
+                <rect height="3" width="1" transform="translate(5,6)" />
+                <rect height="2" width="1" transform="translate(6,8)" />
+                <rect height="1" width="1" transform="translate(8,10)" />
+                <rect height="3" width="1" transform="translate(6,4)" />
+
+            </g>
+
+            <g class="blue">
+                <rect height="1" width="1" transform="translate(6,12)" />
+                <rect height="1" width="1" transform="translate(8,12)" />
+                <rect height="1" width="1" transform="translate(5,13)" />
+                <rect height="1" width="1" transform="translate(7,13)" />
+                <rect height="1" width="1" transform="translate(9,13)" />
+                <rect height="1" width="1" transform="translate(6,14)" />
+                <rect height="1" width="1" transform="translate(8,14)" />
+            </g>
+
+            <g class="lightblue">
+                <rect height="1" width="1" transform="translate(7,12)" />
+                <rect height="1" width="1" transform="translate(6,13)" />
+                <rect height="1" width="1" transform="translate(8,13)" />
+                <rect height="1" width="1" transform="translate(5,14)" />
+                <rect height="1" width="1" transform="translate(7,14)" />
+                <rect height="1" width="1" transform="translate(9,14)" />
+            </g>
+        </g>
+    </g>
+</svg>

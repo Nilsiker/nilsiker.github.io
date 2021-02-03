@@ -1,0 +1,61 @@
+$fade_duration: 1s;
+
+
+
+.fade-in {
+    animation: fadeIn ease $fade_duration;
+    -webkit-animation: fadeIn ease $fade_duration;
+    -moz-animation: fadeIn ease $fade_duration;
+    -o-animation: fadeIn ease $fade_duration;
+    -ms-animation: fadeIn ease $fade_duration;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
